@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93022C8AC3DFA38D7FDB36B5 /* Pods_NextRoom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C97725D0B20A2C91E7A3C5A /* Pods_NextRoom.framework */; };
 		AE4F9FEA21A4240C006F1DA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4F9FE921A4240C006F1DA4 /* AppDelegate.swift */; };
 		AE4F9FEC21A4240C006F1DA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4F9FEB21A4240C006F1DA4 /* ViewController.swift */; };
 		AE4F9FEF21A4240C006F1DA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE4F9FED21A4240C006F1DA4 /* Main.storyboard */; };
@@ -34,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C97725D0B20A2C91E7A3C5A /* Pods_NextRoom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NextRoom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34299FF1529B50A0A1A43C47 /* Pods-NextRoom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextRoom.release.xcconfig"; path = "Pods/Target Support Files/Pods-NextRoom/Pods-NextRoom.release.xcconfig"; sourceTree = "<group>"; };
+		A866E1408CD1D39010A8F869 /* Pods-NextRoom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextRoom.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NextRoom/Pods-NextRoom.debug.xcconfig"; sourceTree = "<group>"; };
 		AE4F9FE621A4240C006F1DA4 /* NextRoom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NextRoom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE4F9FE921A4240C006F1DA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE4F9FEB21A4240C006F1DA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93022C8AC3DFA38D7FDB36B5 /* Pods_NextRoom.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		314BD73CBDDE09075B13FD02 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A866E1408CD1D39010A8F869 /* Pods-NextRoom.debug.xcconfig */,
+				34299FF1529B50A0A1A43C47 /* Pods-NextRoom.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AE4F9FDD21A4240C006F1DA4 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +95,8 @@
 				AE4F9FFD21A42411006F1DA4 /* NextRoomTests */,
 				AE4FA00821A42411006F1DA4 /* NextRoomUITests */,
 				AE4F9FE721A4240C006F1DA4 /* Products */,
+				314BD73CBDDE09075B13FD02 /* Pods */,
+				DF68DB366BC1EF939C8D066F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +141,14 @@
 			path = NextRoomUITests;
 			sourceTree = "<group>";
 		};
+		DF68DB366BC1EF939C8D066F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C97725D0B20A2C91E7A3C5A /* Pods_NextRoom.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE4FA00E21A42412006F1DA4 /* Build configuration list for PBXNativeTarget "NextRoom" */;
 			buildPhases = (
+				80B924DBD01C8D523EC1B9E2 /* [CP] Check Pods Manifest.lock */,
 				AE4F9FE221A4240C006F1DA4 /* Sources */,
 				AE4F9FE321A4240C006F1DA4 /* Frameworks */,
 				AE4F9FE421A4240C006F1DA4 /* Resources */,
+				3376A868841DE70B91055BB9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,6 +276,69 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3376A868841DE70B91055BB9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NextRoom/Pods-NextRoom-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ActionSheetPicker-3.0/ActionSheetPicker_3_0.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/CircleProgressView/CircleProgressView.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/MZAppearance/MZAppearance.framework",
+				"${BUILT_PRODUCTS_DIR}/MZFormSheetPresentationController/MZFormSheetPresentationController.framework",
+				"${BUILT_PRODUCTS_DIR}/PullToRefresher/PullToRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/UILoadControl/UILoadControl.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ActionSheetPicker_3_0.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CircleProgressView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MZAppearance.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MZFormSheetPresentationController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PullToRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UILoadControl.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NextRoom/Pods-NextRoom-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80B924DBD01C8D523EC1B9E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NextRoom-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AE4F9FE221A4240C006F1DA4 /* Sources */ = {
@@ -428,11 +517,13 @@
 		};
 		AE4FA00F21A42412006F1DA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A866E1408CD1D39010A8F869 /* Pods-NextRoom.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K3YF8RZG3R;
 				INFOPLIST_FILE = NextRoom/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -446,11 +537,13 @@
 		};
 		AE4FA01021A42412006F1DA4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34299FF1529B50A0A1A43C47 /* Pods-NextRoom.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K3YF8RZG3R;
 				INFOPLIST_FILE = NextRoom/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
